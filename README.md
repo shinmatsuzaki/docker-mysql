@@ -4,6 +4,7 @@ docker-composeで動作するMySQLのサンプル
 ### How To Use
 - コンテナのビルド＆起動 `$ make`
 - コンテナへのSSH `$ make ssh`
+- コンテナへ上のmysqlに接続 `$ make mysql`
 - コンテナの終了 `$ make clean`
 
 ### MySQlのDockerコンテナ専用の環境変数

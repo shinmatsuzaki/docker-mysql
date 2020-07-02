@@ -16,6 +16,10 @@ build:
 ssh:
 		docker exec -it mysql bash
 
+.PHONY: mysql
+mysql:
+		docker exec -it mysql mysql -u root -p
+
 .PHONY: ps
 ps:
 		docker-compose ps && echo ""
