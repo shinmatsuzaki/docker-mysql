@@ -6,7 +6,7 @@ default: start
 
 .PHONY: start
 start:
-		docker-compose up --build -d mysql
+		docker-compose up --build -d mysql2 ubuntu
 
 .PHONY: build
 build:
@@ -14,11 +14,11 @@ build:
 
 .PHONY: ssh
 ssh:
-		docker exec -it mysql bash
+		docker exec -it mysql2 bash
 
 .PHONY: mysql
 mysql:
-		docker exec -it mysql mysql -u root -p
+		docker exec -it mysql2 mysql -u root -p
 
 .PHONY: ps
 ps:

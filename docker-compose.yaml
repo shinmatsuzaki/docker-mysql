@@ -1,9 +1,15 @@
 version: '3'
 
 services:
-     mysql:
+     ubuntu:
+         container_name: ubuntu
+         image: ubuntu
+         command: tail -f /dev/null
+         networks:
+             - dev-network
+     mysql2:
          build: .
-         container_name: mysql
+         container_name: mysql2
          command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_bin
          networks:
              - dev-network
