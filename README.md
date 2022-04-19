@@ -10,6 +10,9 @@ docker-composeで動作するMySQLのサンプル
 ### MySQlのDockerコンテナ専用の環境変数
 https://qiita.com/nanakenashi/items/180941699dc7ba9d0922
 
+### Dockerコンテナの公式ドキュメント
+https://hub.docker.com/_/mysql?tab=description
+
 ### sample data
 - mysql公式の `world database` を使用
 https://dev.mysql.com/doc/index-other.html
