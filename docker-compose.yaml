@@ -13,7 +13,8 @@ services:
              MYSQL_ROOT_PASSWORD: mysql
              MYSQL_USER: user
              MYSQL_PASSWORD: user
-
+         volumes:
+             - ./data:/var/lib/mysql
 
 networks:
     dev-network:
